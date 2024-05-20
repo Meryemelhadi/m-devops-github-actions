@@ -74,7 +74,7 @@ jobs:
         if: ${{ inputs.checkout_submodules  }}
         with:
           submodules: "true"
-          token: ${{ secrets.pat_token }}
+          
       - name: Checkout
         uses: actions/checkout@v4
         if: ${{ !inputs.checkout_submodules }}
